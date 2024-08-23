@@ -1,0 +1,14 @@
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.log
+tmp/
+.tmp/
+*~
+*.bak
+.cache/
+dist/
+build/
+*.local
+js/sintaxis_dom.mk

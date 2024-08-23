@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="assets/icono_encriptador2.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Programa</title>
+</head>
+
+<!-- Esta plantilla es Mobile First y se compone del header, el main con tres section y el footer:
+
+ -en el header se sitúa el ícono del sitio
+ -en el primer section se encuentra el imput con la leyenda por defecto 'Ingrese el texto aquí'
+ -en el segundo section se hallan dos div, uno con un ícono y un párrafo con la leyenda 'Sólo letras minúsculas y sin acentos'. El otro div incluye los botones 'Encriptar' y 'Desencriptar'
+ -en el tercer section se sitúa un div con el output, por defecto el párrafo 'Ningún mensaje fue encontrado' junto con otro párrafo debajo, de menor tamaño, con la leyenda 'Ingresa el texto que desees encriptar o desencriptar'
+ -en el footer se encuentran los datos del autor junto con el año de creación y la leyenda de los derechos reservados   (opcional)
+
+-->
+
+<body>  
+    <header>
+        <div class="div_icon"><img class="img_icon" src="assets/icono_encriptador2.png" alt="ícono"></div>
+    </header>
+    <main>
+        <div class="div_input">
+            <section class="section_input">
+                <textarea name="texto" id="input_text" placeholder="Ingrese el texto aquí" maxlength="200" rows="10" cols="20" required></textarea>
+            </section>
+            <section class="section_btn">
+                <div class="div_section_btn1">
+                    <img class="img_icon_signo_excla" src="assets/icono_exclamacion_azul.png" alt="ícono signo de exclamación">
+                    <p class="p_solo_let_min">Sólo letras minúsculas y sin acentos con un máximo de 200 caracteres</p>
+                </div>
+                <div class="div_section_btn2">
+                    <button class="btn_encriptar" type="submit">Encriptar</button>
+                    <button class="btn_desencriptar" type="submit">Desencriptar</button>
+                </div>
+            </section>
+        </div>
+        <section class="section_output">
+            <div class="div_output">
+                <img class="img_diamante" src="assets/mujer_diamante.png" alt="dibujo">
+                <p id="p_output">Ningún mensaje fue encontrado <br> <br>Ingresa el texto que desees encriptar o desencriptar</p>
+                <div class="div_copy">
+                    <button class="btn_copy">Copiar</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
