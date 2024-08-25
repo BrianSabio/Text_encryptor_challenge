@@ -1,5 +1,6 @@
 
 ## Sitio con programa de encriptación y desencriptación de texto
+![Encriptador de texto](/assets/Decodificador%20de%20texto.png "Encriptador de texto")
 
 
 Este es un proyecto Responsive Design y Mobile First en el cual se toma un texto ingresado (que sólo acepta minúsculas y espacios) y permite cifrarlo o descifrarlo a partir de las siguientes "llaves" de encriptación:
@@ -67,4 +68,5 @@ Con JavaScript se utilizan funciones, sintaxis de manipulación de nodos y eleme
 
 ![Creado por Brian Sabio](http://ForTheBadge.com/images/badges/built-with-love.svg "Creado por Brian Sabio")
 
-***by Brian Sabio***
+***by Brian Sabio*** 
+
