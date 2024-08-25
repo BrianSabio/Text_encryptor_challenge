@@ -58,7 +58,7 @@ Con JavaScript se utilizan funciones, sintaxis de manipulación de nodos y eleme
 
 <img src="/assets/md/sitio_encriptador_mobile.jpg" alt="imagen sitio mobile" width="50%">
 
-
+#### Link al sitio:
 **[https://briansabio.github.io/Text_encryptor_challenge/](https://briansabio.github.io/Text_encryptor_challenge/)**
 
 
@@ -66,5 +66,4 @@ Con JavaScript se utilizan funciones, sintaxis de manipulación de nodos y eleme
 
 
 ![Creado por Brian Sabio](http://ForTheBadge.com/images/badges/built-with-love.svg "Creado por Brian Sabio")
-
-  ***by Brian Sabio***
+***by Brian Sabio***
