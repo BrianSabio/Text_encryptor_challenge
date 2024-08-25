@@ -23,6 +23,11 @@ gaitober" => "gato"
 	"mairimesai" => "maria"
 
 
+![html icon](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
+ "HTML") ![css icon](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white
+"CSS") ![JavaScript icon](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=JavaScript&logoColor=white
+ "JavaScript")
+
 
 El proyecto se desarrolla con los lenguajes HTML, CSS y JavaScript.
 Por parte del CSS se hace uso de variables, reglas como @keyframes y @media.
@@ -45,8 +50,21 @@ Con JavaScript se utilizan funciones, sintaxis de manipulación de nodos y eleme
 
  - En el footer se encuentran los datos del autor junto con el año de creación y la leyenda de los derechos reservados.
 
-//imagenes//
+##### Escritorio
+
+<img src="/assets/md/sitio_encriptador_desktop.png" alt="imagen sitio desktop" width="90%">
+
+##### Móvil
+
+<img src="/assets/md/sitio_encriptador_mobile.jpg" alt="imagen sitio mobile" width="50%">
+
 
 **[https://briansabio.github.io/Text_encryptor_challenge/](https://briansabio.github.io/Text_encryptor_challenge/)**
 
-***Desarrollado por Brian Sabio***
+
+![works on my machine](https://forthebadge.com/images/badges/works-on-my-machine.svg)
+
+
+![Creado por Brian Sabio](http://ForTheBadge.com/images/badges/built-with-love.svg "Creado por Brian Sabio")
+
+  ***by Brian Sabio***
