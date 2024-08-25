@@ -1,3 +1,4 @@
+
 //VINCULACIÓN DE NODOS Y ELEMENTOS HTML//
 const input_text = document.querySelector("#input_text");   //input textarea
 const btn_encriptar = document.querySelector(".btn_encriptar");   //botón encriptar
@@ -5,6 +6,7 @@ const btn_desencriptar = document.querySelector(".btn_desencriptar");   //botón
 const p_output = document.querySelector("#p_output");   //párrafo salida
 const img_diamante = document.querySelector(".img_diamante")   //imagen mujer diamante
 const btn_copy = document.querySelector(".btn_copy");   //botón copiar
+const hide_div = document.querySelector(".hide")   //clase ocultar div botón
 
 //DEFINICIÓN DE LLAVES DE ENCRIPTACIÓN
 const llaves = {
@@ -57,7 +59,7 @@ async function copiarTexto() {
     } catch (error) {
         console.error('Error al copiar texto:', error);
     };
-    };
+};
 
 //CREACIÓN DE EVENTOS DE CLICK
 
@@ -65,11 +67,14 @@ async function copiarTexto() {
 btn_encriptar.addEventListener('click', () => {
     let texto = input_text.value.trim();
     if (texto === "") {
+        hide_div.style.display = "none";
+        img_diamante.style.display = "block";
         p_output.innerHTML = "Ningún mensaje fue encontrado <br> <br>Ingresa el texto que desees encriptar o desencriptar"
     } else {
         const textoEncriptado = encriptarTexto(texto);
         p_output.textContent = textoEncriptado;
         img_diamante.style.display = "none";
+        hide_div.style.display = "flex";
     };
 });
 
@@ -77,11 +82,14 @@ btn_encriptar.addEventListener('click', () => {
 btn_desencriptar.addEventListener('click', () => {
     let texto = input_text.value.trim();
     if (texto === "") {
+        hide_div.style.display = "none";
+        img_diamante.style.display = "block";
         p_output.innerHTML = "Ningún mensaje fue encontrado <br> <br>Ingresa el texto que desees encriptar o desencriptar"
     } else {
         const textoDesencriptado = desencriptarTexto(texto);
         p_output.textContent = textoDesencriptado;
         img_diamante.style.display = "none";
+        hide_div.style.display = "flex";
     };
 });
 

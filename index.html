@@ -3,24 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="assets/icono_encriptador2.png" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="css/style.css">
     <title>Programa</title>
 </head>
-
-<!-- Esta plantilla es Mobile First y se compone del header, el main con tres section y el footer:
-
- -en el header se sitúa el ícono del sitio
- -en el primer section se encuentra el imput con la leyenda por defecto 'Ingrese el texto aquí'
- -en el segundo section se hallan dos div, uno con un ícono y un párrafo con la leyenda 'Sólo letras minúsculas y sin acentos'. El otro div incluye los botones 'Encriptar' y 'Desencriptar'
- -en el tercer section se sitúa un div con el output, por defecto el párrafo 'Ningún mensaje fue encontrado' junto con otro párrafo debajo, de menor tamaño, con la leyenda 'Ingresa el texto que desees encriptar o desencriptar'
- -en el footer se encuentran los datos del autor junto con el año de creación y la leyenda de los derechos reservados   (opcional)
-
--->
-
 <body>  
     <header>
-        <div class="div_icon"><img class="img_icon" src="assets/icono_encriptador2.png" alt="ícono"></div>
+        <div class="div_icon"><img class="img_icon" src="/assets/icon.png" alt="ícono"></div>
     </header>
     <main>
         <div class="div_input">
@@ -42,13 +31,14 @@
             <div class="div_output">
                 <img class="img_diamante" src="assets/mujer_diamante.png" alt="dibujo">
                 <p id="p_output">Ningún mensaje fue encontrado <br> <br>Ingresa el texto que desees encriptar o desencriptar</p>
-                <div class="div_copy">
+                <div class="div_copy hide">
                     <button class="btn_copy">Copiar</button>
                 </div>
             </div>
         </section>
     </main>
     <footer>
+        <p>© 2024 | Brian Ezequiel Sabio | Alura</p>
     </footer>
     <script src="js/script.js"></script>
 </body>
