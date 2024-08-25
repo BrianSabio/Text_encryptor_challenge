@@ -7,6 +7,8 @@ const p_output = document.querySelector("#p_output");   //párrafo salida
 const img_diamante = document.querySelector(".img_diamante")   //imagen mujer diamante
 const btn_copy = document.querySelector(".btn_copy");   //botón copiar
 const hide_div = document.querySelector(".hide")   //clase ocultar div botón
+const anchoResolucion = document.documentElement.clientWidth;   //ancho viewport
+
 
 //DEFINICIÓN DE LLAVES DE ENCRIPTACIÓN
 const llaves = {
@@ -61,24 +63,6 @@ async function copiarTexto() {
     };
 };
 
-//CREACIÓN DE EVENTOS DE CLICK
-
-// //Evento de encriptación
-// btn_encriptar.addEventListener('click', () => {
-//     let texto = input_text.value.trim();
-//     if (texto === "") {
-//         hide_div.style.display = "none";
-//         img_diamante.style.display = "block";
-//         p_output.innerHTML = "Ningún mensaje fue encontrado <br> <br>Ingresa el texto que desees encriptar o desencriptar"
-//     } else {
-//         const textoEncriptado = encriptarTexto(texto);
-//         p_output.textContent = textoEncriptado;
-//         img_diamante.style.display = "none";
-//         hide_div.style.display = "flex";
-//     };
-// });
-
-const anchoResolucion = document.documentElement.clientWidth;
 //Evento de encriptación
 btn_encriptar.addEventListener('click', () => {
     let texto = input_text.value.trim();
