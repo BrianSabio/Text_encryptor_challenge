@@ -63,12 +63,31 @@ async function copiarTexto() {
 
 //CREACIÓN DE EVENTOS DE CLICK
 
+// //Evento de encriptación
+// btn_encriptar.addEventListener('click', () => {
+//     let texto = input_text.value.trim();
+//     if (texto === "") {
+//         hide_div.style.display = "none";
+//         img_diamante.style.display = "block";
+//         p_output.innerHTML = "Ningún mensaje fue encontrado <br> <br>Ingresa el texto que desees encriptar o desencriptar"
+//     } else {
+//         const textoEncriptado = encriptarTexto(texto);
+//         p_output.textContent = textoEncriptado;
+//         img_diamante.style.display = "none";
+//         hide_div.style.display = "flex";
+//     };
+// });
+
+const anchoResolucion = document.documentElement.clientWidth;
 //Evento de encriptación
 btn_encriptar.addEventListener('click', () => {
     let texto = input_text.value.trim();
     if (texto === "") {
         hide_div.style.display = "none";
         img_diamante.style.display = "block";
+        if (anchoResolucion < 1201) {
+            img_diamante.style.display = "none";
+        }
         p_output.innerHTML = "Ningún mensaje fue encontrado <br> <br>Ingresa el texto que desees encriptar o desencriptar"
     } else {
         const textoEncriptado = encriptarTexto(texto);
@@ -84,6 +103,9 @@ btn_desencriptar.addEventListener('click', () => {
     if (texto === "") {
         hide_div.style.display = "none";
         img_diamante.style.display = "block";
+        if (anchoResolucion < 1201) {
+            img_diamante.style.display = "none";
+        }
         p_output.innerHTML = "Ningún mensaje fue encontrado <br> <br>Ingresa el texto que desees encriptar o desencriptar"
     } else {
         const textoDesencriptado = desencriptarTexto(texto);

@@ -155,6 +155,10 @@ button {
     white-space: pre-wrap;
 }
 
+.img_diamante {
+    display: none;
+}
+
 .div_copy {
     display: none;
     justify-content: center;
